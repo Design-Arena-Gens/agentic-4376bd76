@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cyan: 56 189 248; /* cyan-400 */
+  --color-violet: 139 92 246; /* violet-500 */
+}
+
+html, body {
+  background-color: #0b0f16;
+}
+
+/* Subtle scanline/tech pattern */
+.bg-tech {
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.035) 1px,
+      transparent 1px
+    );
+  background-size: 100% 24px;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.15), 0 0 90px rgba(139, 92, 246, 0.12);
+}
